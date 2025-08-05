@@ -15,7 +15,6 @@ namespace form2
         public Form1()
         {
             InitializeComponent();
-           // comboBox1.Items.AddRange(new string[] { "Suma", "Resta", "Multiplicación", "División" });
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -40,13 +39,9 @@ namespace form2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int a, b;
-            if (!int.TryParse(textBox7.Text, out a) || !int.TryParse(textBox8.Text, out b))
-            {
-                MessageBox.Show("Por favor, ingresa números válidos.");
-                return;
-            }
-
+            int a;
+            int b;
+     
             if (comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Selecciona una operación.");
